@@ -1,0 +1,155 @@
+
+nav {
+  margin-top: 10px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #6a0d45;
+  font-weight: bold;
+  background-color: #fff0f5;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 1px solid #F279BC;
+}
+nav a:hover {
+  background-color: #ffcce5;
+}
+li{
+  transition: 0.3s;
+}
+li:hover{
+  transform: scale(1.05);
+}
+/* Reset padrão */
+* {
+  margin: 10;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #fff0f5, #ffe6f0);
+  color: #4a2c3b;
+  padding: 30px;
+  line-height: 1.6;
+
+}
+
+/* Cabeçalho */
+header {
+  background-color: #ffb6c1;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  font-size: 2.2em;
+  color: #822659;
+}
+
+/* Índice */
+#indice {
+  margin-top: 20px;
+  background-color: #fff0f5;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #ff99cc;
+}
+
+#indice h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #822659;
+}
+
+#indice ul {
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+#indice a {
+  text-decoration: none;
+  color: #822659;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+#indice a:hover {
+  color: #b3005e;
+  text-decoration: underline;
+}
+
+/* Sessões da biografia */
+section {
+  margin-top: 40px;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+  border-left: 5px solid #F279BC;
+}
+
+
+section h2 {
+  margin-bottom: 15px;
+  color: #6a1a3c;
+}
+
+/* Botão voltar pro menu */
+.voltar {
+  display: inline-block;
+  margin-top: 20px;
+  transition: 0.3s;
+  text-decoration: none;
+  color: #6a0d45;
+  font-weight: bold;
+  background-color: #fff0f5;
+  padding: 10px 20px;
+  border-radius: 20px;
+  transition: 0.3s;
+  border: 1px solid #F279BC;
+}
+
+.voltar:hover {
+  background-color: #ffcce5;
+  transform: scale(1.05);
+}
+
+/* Rodapé */
+footer {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 0.9em;
+  color: #7c4960;
+}
+
+.nnnt{
+  color: #6a0d45;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #fff0f5;
+  border-radius: 20px;
+  padding: 10px;
+  border: 1px solid #F279BC;
+  transition: 0.3s;
+}
+.nnnt:hover{
+  transform: scale(1.05);
+  background-color: #ffcce5;
+}
+

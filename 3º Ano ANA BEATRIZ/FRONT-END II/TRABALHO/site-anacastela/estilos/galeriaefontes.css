@@ -1,0 +1,140 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff0f5;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #ffb6c1;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  border-bottom: 3px solid #e75480;
+}
+
+h1 {
+  font-size: 2.2em;
+  margin: 0;
+}
+
+main {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* Estilo da galeria de imagens */
+.galeria-fotos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+figure {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  padding: 10px;
+}
+
+img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+figcaption {
+  margin-top: 8px;
+  font-style: italic;
+  color: #555;
+}
+
+/* Estilo dos vídeos */
+.galeria-videos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+iframe {
+  border: none;
+  border-radius: 15px;
+  width: 320px;
+  height: 180px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Fontes */
+section.fontes {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  font-size: 1em;
+}
+
+nav {
+  margin-top: 40px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #6a0d45;
+  font-weight: bold;
+  background-color: #fff0f5;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 1px solid #F279BC;
+}
+nav a:hover {
+  background-color: #ffcce5;
+}
+
+footer {
+  background-color: #ffb6c1;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+  font-size: 0.9em;
+}
+section {
+  margin-top: 40px;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+  border-left: 5px solid #F279BC;
+}
+/* Botão voltar pro menu */
+.voltar {
+  display: inline-block;
+  margin-top: 20px;
+  transition: 0.3s;
+  text-decoration: none;
+  color: #6a0d45;
+  font-weight: bold;
+  background-color: #fff0f5;
+  padding: 10px 20px;
+  border-radius: 20px;
+  transition: 0.3s;
+  border: 1px solid #F279BC;
+}
+
+.voltar:hover {
+  background-color: #ffcce5;
+  transform: scale(1.05);
+}

@@ -1,0 +1,87 @@
+/* Resetzinho básico */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #4a004e;
+  background: linear-gradient(to bottom, #ffe6f0, #ffffff);
+}
+
+/* Cabeçalho */
+header {
+  background-color: #ffd6f6;
+  padding: 30px;
+  text-align: center;
+  border-bottom: 3px solid #da91d2;
+}
+
+header h1 {
+  font-size: 36px;
+  color: #6a0d45;
+  margin: 0;
+}
+
+/* Corpo principal */
+main {
+  padding: 30px;
+}
+
+/* Cada seção (ano) */
+section {
+    margin-top: 40px;
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #ffffff;
+  border-left: 5px solid #F279BC;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(176, 76, 163, 0.1);
+}
+
+/* Título de cada ação (com o emoji) */
+section h2 {
+  font-size: 30px;
+  color:#6a0d45;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 15px;
+}
+
+/* Parágrafo */
+section p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Rodapé */
+footer {
+  background-color: #ffd6f6;
+  padding: 15px;
+  text-align: center;
+  font-weight: bold;
+  color: #7b1a85;
+  border-top: 3px solid #da91d2;
+}
+
+/* Botão voltar pro menu */
+.voltar {
+  display: inline-block;
+  margin-top: 0px;
+  transition: 0.3s;
+  text-decoration: none;
+  color: #6a0d45;
+  font-weight: bold;
+  background-color: #fff0f5;
+  padding: 10px 20px;
+  border-radius: 20px;
+  transition: 0.3s;
+  border: 1px solid #F279BC;
+}
+
+.voltar:hover {
+  background-color: #ffcce5;
+  transform: scale(1.05);
+}
+
+div{
+   text-align: center; 
+}

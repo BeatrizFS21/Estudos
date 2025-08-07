@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex011</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas (pictures)</h1>
+    <p>Imagem de adapta ao tamanho do navegador.</p>
+
+    <picture>
+<!-- Se a tela tiver no máximo 750px de largura, carregue a foto pequena -->
+<source media="(max-width: 750px)" srcset="img.p.moto.png" type="image/png">
+<!-- Se a tela tiver no máximo 1050px de largura, carregue a foto média -->
+<source media="(max-width: 1050px)" srcset="img.m.carro.png" type="image/png">
+<!-- Para todas as outras telas (maiores), carregue a foto grande -->
+<img src="img.g.caminhao.png" alt="A imagem flexível funciona">
+</picture>
+
+    <p>A atividade é simples, a imagem acima tem que exibir:
+
+        <ol>
+            <li>A moto para imagem pequema</li>
+            <li>O carro para imagem média</li>
+            <li>O caminhão para imagem grande</li>
+        </ol>
+        &#x1F92F
+    </p>
+    <h1>Áudio</h1>
+    <audio controls preload="metadata" loop>
+    <source src="ex011.wav" type="audio/mpeg">
+    <source src="ex011.mp3" type="audio/ogg">
+    <source src="ex011.ogg" type="audio/ogg">
+    </audio>
+    <p>E acima, uma música em loop, além do "fallback", não se esqueça de colocar os 3 formatos:
+        <ul>
+            <li>Em mp3</li>
+            <li>em ogg</li>
+            <li>Em wav</li>
+        </ul>
+    </p>
+</body>
+</html>
