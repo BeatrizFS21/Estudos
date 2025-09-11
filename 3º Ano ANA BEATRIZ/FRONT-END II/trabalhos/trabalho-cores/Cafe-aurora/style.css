@@ -1,0 +1,109 @@
+/* Paleta Café Aurora
+   Marrom: #6F4E37 - ligado diretamente ao café, transmite robustez, aconchego e confiança. Serve como cor principal no cabeçalho e rodapé para dar identidade forte.
+
+   Bege: #F5F5DC - fundo neutro, leve e acolhedor. Equilibra o marrom e mantém boa legibilidade. Remete a espuma de café com leite, reforçando o tema.
+
+   Laranja: #E67E22 - cor de destaque, transmite energia, vitalidade e calor. Usada em títulos e botões para chamar atenção e estimular a ação.
+
+   Creme: #FFF8F0 - suaviza o visual, evita poluição visual e passa sensação de conforto. Funciona bem como cor base de fundo.
+
+   Cinza-escuro: #333 - cor de texto com alto contraste no fundo claro, garantindo leitura fácil e moderna.
+*/
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #FFF8F0;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+    background-color:#6F4E37;  
+    color: #F5F5DC ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+header img {
+  height: 60px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #F5F5DC;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+nav a:hover {
+  color: #E67E22;
+}
+main {
+  padding: 40px 20px;
+  text-align: center;
+}
+section {
+  margin-bottom: 60px;
+}
+section h2 {
+  color: #6F4E37;
+  margin-bottom: 15px;
+}
+
+section p {
+  max-width: 600px;
+  margin: 0 auto 20px;
+}
+#cardapio div {
+  background: #F5F5DC;
+  padding: 20px;
+  margin: 15px auto;
+  border-radius: 10px;
+  max-width: 400px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+#cardapio h3 {
+  color: #E67E22;
+}
+
+#cardapio img {
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+button {
+  background-color: #E67E22;
+  color: #fff;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+button:hover {
+  background-color: #cf6510;
+}
+
+footer {
+  background-color: #6F4E37;
+  color: #F5F5DC;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
+}

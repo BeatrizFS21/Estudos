@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora de Tinta</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <style>
+        /* Estilo para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    background-image: url('https://images.unsplash.com/photo-1541888494951-4043f1146a48?q=80&w=2070&auto=format&fit=crop');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Estilo para o contêiner principal (o card com o formulário) */
+.container {
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo com transparência */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+
+/* Estilo para o título */
+h1 {
+    color: #333;
+    margin-bottom: 24px;
+}
+
+/* Estilo do formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Estilo para os rótulos */
+label {
+    text-align: left;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Estilo para os campos de entrada */
+input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+input[type="number"]:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+/* Estilo para o botão de envio */
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para o resultado (relatório) */
+.resultado {
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo com transparência */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+
+.resultado h2 {
+    color: #007bff;
+    margin-bottom: 24px;
+}
+
+.resultado p {
+    color: #555;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.resultado p strong {
+    color: #333;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Tinta</h1>
+        <form method="post" action="calcular.php">
+            <label for="largura">Largura da parede (m):</label>
+            <input type="number" step="0.01" name="largura" id="largura" required>
+
+            <label for="altura">Altura da parede (m):</label>
+            <input type="number" step="0.01" name="altura" id="altura" required>
+
+            <input type="submit" value="Calcular">
+        </form>
+    </div>
+</body>
+</html>
