@@ -1,0 +1,114 @@
+/*Comentário sobre as cores
+A paleta foi pensada para equilibrar suavidade e contraste. Tons claros (azuis e cinzas) criam fundo limpo e profissional, enquanto azuis vibrantes nos botões e focos destacam interatividade. As mensagens usam cores universais: verde para sucesso, vermelho para erro, reforçando a comunicação intuitiva. O degradê dá dinamismo sem poluir e mantém o layout moderno.*/
+
+/*Comentário sobre a fonte
+O título usa uma fonte serifada decorativa (Arbutus Slab), transmitindo personalidade e destaque visual. O corpo adota fontes sem serifa (Segoe UI, Tahoma, Verdana), que garantem legibilidade em diferentes telas. A combinação gera contraste hierárquico: título marcante e conteúdo simples e claro para leitura rápida.*/
+
+@font-face {
+    font-family: 'Prova';
+    src: url(Arbutus_Slab/ArbutusSlab-Regular.ttf);
+}
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(135deg, #e0f7fa, #ffffff);
+    color: #2c3e50;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;   /* centraliza horizontal */
+    align-items: center;       /* centraliza vertical */
+}
+
+/* Container do formulário */
+main {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #f4f4f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+
+h1 {
+    font-family: 'Prova';
+    text-align: center;
+    margin-bottom: 20px;
+    color: #34495e;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+form input, 
+form select, 
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccd1d9;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+form input:focus, 
+form select:focus, 
+form textarea:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(90deg, #3498db, #2980b9); /* degrade azul chamativo */
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* Área de resultado */
+.resultado {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 6px;
+    background-color: #ecf9f9; /* verde-água bem suave para feedback */
+    border: 1px solid #b2ebf2; 
+    color: #006064; /* verde-azulado escuro para texto */
+    font-size: 14px;
+    display: none; /* começa escondido */
+}
+
+
+.resultado.sucesso {
+    background-color: #e8f5e9; /* verde claro */
+    border-color: #81c784;
+    color: #2e7d32;
+}
+
+.resultado.erro {
+    background-color: #ffebee; /* vermelho claro */
+    border-color: #e57373;
+    color: #c62828;
+}
