@@ -21,9 +21,6 @@
         </style>
     </head>
     <body>
-        <h1>algum título</h1>
-        @if(10 > 15)
-            <p>A condição é true</p>
-        @endif
+        
     </body>
 </html>

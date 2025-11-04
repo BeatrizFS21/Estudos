@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Essa é a página de contatos.</h1>
-    <a href="/">Voltar para</a>
+    <a href="/">Voltar para home</a>
 
     
 </body>
